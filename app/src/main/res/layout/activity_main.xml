@@ -3,48 +3,57 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvEtiqueta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Escribe tu nombre"
-        app:layout_constraintHorizontal_bias="0.164"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Escrine tu nombre"
+        android:layout_margin="16dp"
+        android:textColor="@android:color/holo_red_dark"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/editTextTextPersonName6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:text="Name"
+            android:layout_margin="16dp"/>
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@android:color/holo_red_dark"
             android:layout_weight="1"
+            android:style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:text="Button" />
-
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView3"
         android:layout_width="match_parent"
-        android:layout_height="626dp"
+        android:layout_height="50dp"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:text="Subir Informacion"
+        android:textColor="@android:color/holo_red_dark" />
 
 </LinearLayout>
